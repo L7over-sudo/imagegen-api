@@ -1,0 +1,8 @@
+# 本地/临时
+.git/
+__pycache__/
+*.pyc
+*.zip
+out/
+*.jpg
+*.png
