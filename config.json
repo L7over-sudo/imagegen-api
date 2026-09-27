@@ -1,0 +1,28 @@
+{
+  "provider": "hfsy",
+  "default_size": "1024x1024",
+  "providers": {
+    "hfsy": {
+      "type": "task",
+      "base_url": "https://www.hfsyapi.cn",
+      "create_endpoint": "https://www.hfsyapi.cn/v1/image/create",
+      "query_endpoint": "https://www.hfsyapi.cn/v1/image/query/{task_id}",
+      "query_method": "GET",
+      "model": "gpt-image-2",
+      "api_key": "sk-REPLACE_WITH_YOUR_KEY",
+      "size_mode": "pixels",
+      "poll_interval": 4,
+      "poll_timeout": 300
+    },
+    "pollinations": {
+      "type": "url",
+      "url_template": "https://image.pollinations.ai/prompt/{prompt}?width={width}&height={height}&nologo=true&seed={seed}"
+    },
+    "openai_compatible": {
+      "type": "openai",
+      "base_url": "https://api.siliconflow.cn/v1",
+      "api_key": "sk-REPLACE_WITH_YOUR_KEY",
+      "model": "Kwai-Kolors/Kolors"
+    }
+  }
+}
